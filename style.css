@@ -29,6 +29,15 @@ p{
     width: 180px;
     height: 64px;
 }
+.btn-primary:hover{
+    background-color: #FFF;
+    border: 2px solid #FF900E;
+    color: #FF900E;
+}
+.btn-primary:active{
+    background-color: #FF900E;
+    color: #FFF;
+}
 header{
     background: rgba(255, 144, 14, 0.10);
 }
@@ -212,11 +221,16 @@ footer p{
 @media screen and (max-width: 576px) {
     body br{
         display: none;
+        margin: 0;
     }
     .nav-bar{
         display: inline;
-        margin: 0px 20px;
+        margin: 0px 5px;
         text-align: center;
+    }
+    .nav-bar ul{
+        display: flex;
+        justify-content: space-between;
     }
     .banner img{
         width: 95%;
