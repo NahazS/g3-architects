@@ -1,0 +1,272 @@
+body{
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+}
+h2{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+h3{
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.btn-primary{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 8px;
+    background: #FF900E;
+    width: 180px;
+    height: 64px;
+}
+header{
+    background: rgba(255, 144, 14, 0.10);
+}
+/* nav section */
+
+.nav-bar{
+    display: flex;
+    margin: 0px 240px;
+    justify-content: space-between;
+}
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+}
+.nav-bar li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #424242;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* banner section */
+
+.banner{
+    margin-top: 100px;
+    text-align: center;
+
+}
+.banner h1{
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner img{
+    display: block;
+    margin: 50px auto 0px auto;
+    width: 1440px;
+    height: 700px;
+    padding-bottom: 45px;
+}
+
+/* team section */
+
+.team-container{
+    display: flex;
+    margin-top: 85px;
+    justify-content: center;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.team-title{
+    margin-left: 76px;
+    align-content: center;
+}
+.text-quick{
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.text-feature{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.team-title p{
+    margin-bottom: 32px;
+}
+
+/* features section */
+.features{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+.features h2{
+    border-left: 5px solid #FF900E;
+    padding: 21px;
+}
+.box{
+    width: 586px;
+    height: 171px;
+    padding: 30px 0px 0px 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.features-img{
+    margin-left: 146px;
+}
+.features-img img{
+    width: 708px;
+    height: 1140px;
+    border-radius: 8px;
+}
+.ten-year{
+    text-align: center;
+    align-content: center;
+    width: 342px;
+    padding: 30px;
+    border-radius: 8px;
+    background: #FF900E;
+    position: relative;
+    margin-top: -150px;
+    margin-left: -90px;
+}
+.ten-year h1{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    
+}
+.ten-year p{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+/* facts section */
+
+.facts{
+    margin-left: 240px;
+}
+.icon-box-container{
+    margin: 100px 290px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-box{
+    text-align: center;
+    width: 241.831px;
+    height: 241.831px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding-top: 40px;
+}
+.icon-box p, .icon-box h1
+{
+    margin-top: -20px;
+}
+
+/* Our Sponsors section */
+
+.sponsor{
+    margin: 180px 240px 0px 240px;
+    text-align: center;
+}
+.sponsor-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* footer section */
+footer{
+    margin: 130px 240px 216px 240px;
+    text-align: center;
+    background-color: #FFF4E7;
+}
+footer p{
+    font-size: 1.25rem;
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+.hide{
+    display: none;
+}
+/* responsive code */
+
+@media screen and (max-width: 576px) {
+    body br{
+        display: none;
+    }
+    .nav-bar{
+        display: inline;
+        margin: 0px 20px;
+        text-align: center;
+    }
+    .banner img{
+        width: 95%;
+        height: auto;
+    }
+    .team-container{
+        display: inline;
+        text-align: center;
+    }
+    .team-img{
+        display: inline-block;
+    }
+    .team-img img{
+        margin-top: 20px;
+    }
+    .team-title, .features-img, .sponsor , footer{
+        margin: 0;
+    }
+    .features{
+        display: inline;
+    }
+    .features .box{
+        width: 95%;
+        height: auto;
+        padding: 10px 0px 10px 10px;
+    }
+    .features-img img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .ten-year{
+        display: none;
+    }
+    .facts{
+        margin-left: 0px;
+    }
+    .icon-box-container{
+        margin: 0;
+        display: inline;
+    }
+    .icon-box{
+        margin: 30px auto;
+    }
+    .sponsor-img{
+        display: inline;
+    }
+    .sponsor-img img{
+        margin: 30px auto;
+        margin-right: 20px;
+    }
+    
+}
